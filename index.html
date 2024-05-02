@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>API Github | Dev Quest</title>
+</head>
+<body>
+    <main class="container">
+        <section class="search">
+            <input type="text" id="input-username" placeholder="Informe o nome de Usurário">
+            <button type="button" id="button">Procurar</button>
+        </section>
+        <section id="user-section" class="user-section">
+            <div id="user-info" class="user-info">
+                <img id="user-img" src="" alt=" ">
+                <div class="user">
+                    <h1 id="user-name"></h1>
+                    <h2 id="user-login"></h2>
+                    <p id="user-bio"></p>
+                    <div class="social">
+                        <p id="user-followers"></p>
+                        <p id="user-following"></p>
+                    </div>
+                    <div id="event-section"></div>
+                </div>
+            </div>
+            <ul id="user-repos" class="user-repos"></ul>
+        </section>
+    </main>
+
+    <script type="module" src="./src/scripts/index.js"></script>
+</body>
+</html>
